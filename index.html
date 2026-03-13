@@ -1,110 +1,459 @@
-<!DOCTYPE html>
-<html lang="en">
+"* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<head>
-<meta charset="UTF-8">
-<title>Sohaib Portfolio</title>
-
-<style>
 body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f8f9fa;
-    color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+
+/* Navigation */
+.nav-clean {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #10B981;
+}
+
+.cv-btn {
+  background: #10B981;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cv-btn:hover {
+  background: #059669;
+}
+
+/* Hero */
+.hero-matrix {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 4rem;
+}
+
+.hero-content-matrix {
+  max-width: 1000px;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-image-matrix {
+  width: 300px;
+  height: 300px;
+  background: #f9fafb;
+  border: 3px solid #10B981;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10B981;
+}
+
+.location-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #d1fae5;
+  border: 1px solid #10B981;
+  border-radius: 2rem;
+  color: #059669;
+  font-size: 0.9rem;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.hero-desc {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  background: #10B981;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-cta:hover {
+  background: #059669;
+}
+
+/* Projects */
+.projects-section {
+  background: #f9fafb;
+  padding: 6rem 2rem;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #d1fae5;
+  border: 1px solid #10B981;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  color: #059669;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.projects-tabs {
+  margin-top: 3rem;
+}
+
+.tabs-list {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+.tab-trigger {
+  background: transparent;
+  color: #6b7280;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.tab-trigger[data-state=\"active\"] {
+  background: #10B981;
+  color: #fff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.project-card:hover {
+  border-color: #10B981;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  background: #d1fae5;
+  border: 1px solid #10B981;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10B981;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.status-badge.ongoing {
+  background: #fef3c7;
+  color: #d97706;
+  border: 1px solid #fbbf24;
+}
+
+.status-badge.coming-soon {
+  background: #e0e7ff;
+  color: #4f46e5;
+  border: 1px solid #818cf8;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+
+.project-category {
+  font-size: 0.875rem;
+  color: #10B981;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  border-radius: 0.375rem;
+}
+
+/* Skills */
+.skills-clean {
+  background: #fff;
+  padding: 6rem 2rem;
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 5px;
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.subtitle {
-    color: #555;
-    margin-bottom: 30px;
+.skills-grid-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-h2 {
-    margin-top: 40px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+.skill-card {
+  padding: 2rem;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.skill-card:hover {
+  border-color: #10B981;
 }
 
-li {
-    margin: 10px 0;
+.skill-number {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #10B981;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-a {
-    color: #0066cc;
-    text-decoration: none;
+.skill-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Interests */
+.interests-clean {
+  background: #f9fafb;
+  padding: 6rem 2rem;
 }
 
+.section-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 1.125rem;
+  margin-bottom: 4rem;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.interest-card {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  border-left: 4px solid #10B981;
+}
+
+.interest-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.75rem;
+}
+
+.interest-card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* Footer */
 .footer {
-    margin-top: 50px;
-    color: #777;
-    font-size: 14px;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  padding: 2rem;
+  text-align: center;
 }
-</style>
 
-</head>
+.footer-text {
+  color: #6b7280;
+}
 
-<body>
+.heart-icon {
+  color: #10B981;
+}
 
-<div class="container">
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content-matrix {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-<h1>Sohaib Kaiser Latif</h1>
-<p class="subtitle">Cybersecurity Student | IT Operations | SOC & SIEM Labs</p>
+  .profile-image-matrix {
+    width: 200px;
+    height: 200px;
+  }
 
-<h2>About</h2>
-<p>
-Cybersecurity student with interest in security monitoring, SIEM and network analysis.
-Currently working in IT Operations where I monitor critical systems and services.
-</p>
+  .hero-name {
+    font-size: 2.5rem;
+  }
 
-<h2>Projects</h2>
+  .nav-links {
+    display: none;
+  }
 
-<ul>
-<li>
-<strong>Network Secure Lab</strong><br>
-Virtual enterprise network with pfSense, WAN/LAN/DMZ segmentation and firewall rules.
-</li>
+  .section-title {
+    font-size: 2rem;
+  }
 
-<li>
-<strong>Elastic SIEM Lab</strong><br>
-Security monitoring environment using Elastic Stack with simulated attack events.
-</li>
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 
-<li>
-<strong>Cybersecurity Labs</strong><br>
-Hands-on labs focused on network analysis, detection and threat investigation.
-</li>
-</ul>
+  .skills-grid-simple {
+    grid-template-columns: 1fr;
+  }
 
-<h2>Links</h2>
-
-<ul>
-<li><a href="https://github.com/sohaib2011">GitHub</a></li>
-<li><a href="https://www.linkedin.com/in/sohaib2011">LinkedIn</a></li>
-</ul>
-
-<div class="footer">
-<p>© 2026 Sohaib Kaiser Latif</p>
-</div>
-
-</div>
-
-</body>
-</html>
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+"
