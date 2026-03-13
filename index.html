@@ -1,17 +1,14 @@
-Perfekt! Her er ALT i EN fil! 🎯
-Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DOCTYPE html>
-<html lang=\"en\">
+Her er EN fil som funker perfekt - copy denne:
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sohaib Kaiser Latif - Cybersecurity Portfolio</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
@@ -19,7 +16,8 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             background: #fff;
         }
 
-        /* Navigation */
+        html { scroll-behavior: smooth; }
+
         .nav-clean {
             position: fixed;
             top: 0;
@@ -41,20 +39,16 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             gap: 3rem;
         }
 
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
+        .nav-links { display: flex; gap: 2rem; }
+        
         .nav-link {
             color: #111;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s;
         }
-
-        .nav-link:hover {
-            color: #10B981;
-        }
+        
+        .nav-link:hover { color: #10B981; }
 
         .cv-btn {
             background: #10B981;
@@ -65,14 +59,10 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             font-weight: 600;
             cursor: pointer;
             text-decoration: none;
-            display: inline-block;
         }
 
-        .cv-btn:hover {
-            background: #059669;
-        }
+        .cv-btn:hover { background: #059669; }
 
-        /* Hero */
         .hero-matrix {
             min-height: 100vh;
             background: #fff;
@@ -155,11 +145,8 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             gap: 0.5rem;
         }
 
-        .hero-cta:hover {
-            background: #059669;
-        }
+        .hero-cta:hover { background: #059669; }
 
-        /* Projects */
         .projects-section {
             background: #f9fafb;
             padding: 6rem 2rem;
@@ -202,9 +189,7 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             margin: 0 auto;
         }
 
-        .projects-tabs {
-            margin-top: 3rem;
-        }
+        .projects-tabs { margin-top: 3rem; }
 
         .tabs-list {
             background: #fff;
@@ -212,7 +197,6 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             padding: 0.5rem;
             border-radius: 0.75rem;
             display: inline-flex;
-            margin: 0 auto;
         }
 
         .tab-trigger {
@@ -242,6 +226,7 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             border: 1px solid #e5e7eb;
             border-radius: 1rem;
             padding: 2rem;
+            transition: all 0.3s;
         }
 
         .project-card:hover {
@@ -322,7 +307,6 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             border-radius: 0.375rem;
         }
 
-        /* Skills */
         .skills-clean {
             background: #fff;
             padding: 6rem 2rem;
@@ -346,11 +330,10 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             background: #f9fafb;
             border: 2px solid #e5e7eb;
             border-radius: 0.75rem;
+            transition: all 0.3s;
         }
 
-        .skill-card:hover {
-            border-color: #10B981;
-        }
+        .skill-card:hover { border-color: #10B981; }
 
         .skill-number {
             font-size: 0.875rem;
@@ -366,7 +349,6 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             color: #111;
         }
 
-        /* Interests */
         .interests-clean {
             background: #f9fafb;
             padding: 6rem 2rem;
@@ -406,7 +388,6 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             line-height: 1.7;
         }
 
-        /* Footer */
         .footer {
             background: #fff;
             border-top: 1px solid #e5e7eb;
@@ -414,262 +395,164 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
             text-align: center;
         }
 
-        .footer-text {
-            color: #6b7280;
-        }
+        .footer-text { color: #6b7280; }
+        .heart-icon { color: #10B981; }
 
-        .heart-icon {
-            color: #10B981;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero-content-matrix {
-                flex-direction: column;
-                gap: 2rem;
-            }
-
-            .profile-image-matrix {
-                width: 200px;
-                height: 200px;
-            }
-
-            .hero-name {
-                font-size: 2.5rem;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .skills-grid-simple {
-                grid-template-columns: 1fr;
-            }
-
-            .interests-grid {
-                grid-template-columns: 1fr;
-            }
+            .hero-content-matrix { flex-direction: column; gap: 2rem; }
+            .profile-image-matrix { width: 200px; height: 200px; }
+            .hero-name { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            .section-title { font-size: 2rem; }
+            .projects-grid, .skills-grid-simple, .interests-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class=\"nav-clean\">
-        <div class=\"nav-container\">
-            <div class=\"nav-links\">
-                <a href=\"#projects\" class=\"nav-link\">Projects</a>
-                <a href=\"#skills\" class=\"nav-link\">Skills</a>
-                <a href=\"#interests\" class=\"nav-link\">Interests</a>
+    <nav class="nav-clean">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#interests" class="nav-link">Interests</a>
             </div>
-            <a href=\"/CV-2026.pdf\" download class=\"cv-btn\">Download CV</a>
+            <a href="CV-2026.pdf" download class="cv-btn">Download CV</a>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class=\"hero-matrix\">
-        <div class=\"hero-content-matrix\">
-            <div class=\"profile-section\">
-                <div class=\"profile-image-matrix\">
-                    <svg width=\"80\" height=\"80\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                        <path d=\"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\"></path>
-                        <circle cx=\"12\" cy=\"7\" r=\"4\"></circle>
+    <section class="hero-matrix">
+        <div class="hero-content-matrix">
+            <div class="profile-section">
+                <div class="profile-image-matrix">
+                    <svg width="80" height="80" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
                     </svg>
                 </div>
-                <div class=\"location-badge\">
-                    <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                        <path d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"></path>
-                        <circle cx=\"12\" cy=\"10\" r=\"3\"></circle>
+                <div class="location-badge">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
                     </svg>
                     <span>Oslo, Norway</span>
                 </div>
             </div>
-
-            <div class=\"text-section\">
-                <h1 class=\"hero-name\">Sohaib Kaiser Latif</h1>
-                <h2 class=\"hero-title\">Cybersecurity Master's Student</h2>
-                <p class=\"hero-desc\">
+            <div class="text-section">
+                <h1 class="hero-name">Sohaib Kaiser Latif</h1>
+                <h2 class="hero-title">Cybersecurity Master's Student</h2>
+                <p class="hero-desc">
                     Specializing in log analysis, network monitoring, and threat detection. 
                     I spend my free time sharpening my skills on HackTheBox and TryHackMe, 
                     building hands-on labs, and competing in CTFs.
                 </p>
-                <button class=\"hero-cta\" onclick=\"document.querySelector('#projects').scrollIntoView({behavior: 'smooth'})\">
-                    Explore My Work
-                    <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                        <line x1=\"12\" y1=\"5\" x2=\"12\" y2=\"19\"></line>
-                        <polyline points=\"19 12 12 19 5 12\"></polyline>
-                    </svg>
-                </button>
+                <a href="#projects" class="hero-cta">Explore My Work ↓</a>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id=\"projects\" class=\"projects-section\">
-        <div class=\"section-container\">
-            <div class=\"section-header\">
-                <span class=\"section-tag\">My Work</span>
-                <h2 class=\"section-title\">Projects</h2>
-                <p class=\"section-description\">
-                    A showcase of my cybersecurity projects and technical experiments.
-                </p>
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Projects</h2>
+                <p class="section-description">A showcase of my cybersecurity projects and technical experiments.</p>
             </div>
-
-            <div class=\"projects-tabs\">
-                <div class=\"tabs-list\">
-                    <button class=\"tab-trigger active\" data-tab=\"cybersecurity\">Cybersecurity</button>
-                    <button class=\"tab-trigger\" data-tab=\"others\">Other Projects</button>
+            <div class="projects-tabs">
+                <div class="tabs-list">
+                    <button class="tab-trigger active" onclick="switchTab('cyber')">Cybersecurity</button>
+                    <button class="tab-trigger" onclick="switchTab('others')">Other Projects</button>
                 </div>
-
-                <div class=\"projects-grid\" id=\"cybersecurity-projects\">
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path>
-                                </svg>
-                            </div>
+                <div class="projects-grid" id="cyber-projects">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🛡️</div>
                         </div>
-                        <h3 class=\"project-title\">Elastic SIEM Lab Setup</h3>
-                        <p class=\"project-category\">Security Operations</p>
-                        <p class=\"project-description\">
-                            Practical setup of Elastic SIEM with log collection, event analysis, and alerting 
-                            in a simulated SOC environment.
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">Elastic Stack</span>
-                            <span class=\"tech-badge\">SIEM</span>
-                            <span class=\"tech-badge\">Log Analysis</span>
+                        <h3 class="project-title">Elastic SIEM Lab Setup</h3>
+                        <p class="project-category">Security Operations</p>
+                        <p class="project-description">Practical setup of Elastic SIEM with log collection, event analysis, and alerting in a simulated SOC environment.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Elastic Stack</span>
+                            <span class="tech-badge">SIEM</span>
+                            <span class="tech-badge">Log Analysis</span>
                         </div>
                     </div>
-
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\"></rect>
-                                    <rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\"></rect>
-                                </svg>
-                            </div>
-                            <span class=\"status-badge ongoing\">Ongoing</span>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🌐</div>
+                            <span class="status-badge ongoing">Ongoing</span>
                         </div>
-                        <h3 class=\"project-title\">Virtual Multi-Zone Enterprise Network Lab</h3>
-                        <p class=\"project-category\">Infrastructure</p>
-                        <p class=\"project-description\">
-                            Built and configured a segmented enterprise network with pfSense (WAN/LAN/DMZ).
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">pfSense</span>
-                            <span class=\"tech-badge\">VLANs</span>
-                            <span class=\"tech-badge\">Firewall</span>
+                        <h3 class="project-title">Virtual Multi-Zone Enterprise Network Lab</h3>
+                        <p class="project-category">Infrastructure</p>
+                        <p class="project-description">Built and configured a segmented enterprise network with pfSense (WAN/LAN/DMZ).</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">pfSense</span>
+                            <span class="tech-badge">VLANs</span>
+                            <span class="tech-badge">Firewall</span>
                         </div>
                     </div>
-
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>
-                                    <line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"></line>
-                                </svg>
-                            </div>
-                            <span class=\"status-badge coming-soon\">Coming Soon</span>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🔍</div>
+                            <span class="status-badge coming-soon">Coming Soon</span>
                         </div>
-                        <h3 class=\"project-title\">Malware Analysis 1</h3>
-                        <p class=\"project-category\">Threat Analysis</p>
-                        <p class=\"project-description\">
-                            In-depth static and dynamic malware analysis focusing on reverse engineering.
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">Malware Analysis</span>
-                            <span class=\"tech-badge\">IDA Pro</span>
+                        <h3 class="project-title">Malware Analysis 1</h3>
+                        <p class="project-category">Threat Analysis</p>
+                        <p class="project-description">In-depth static and dynamic malware analysis focusing on reverse engineering.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Malware Analysis</span>
+                            <span class="tech-badge">IDA Pro</span>
                         </div>
                     </div>
-
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <circle cx=\"12\" cy=\"12\" r=\"10\"></circle>
-                                </svg>
-                            </div>
-                            <span class=\"status-badge coming-soon\">Coming Soon</span>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🔬</div>
+                            <span class="status-badge coming-soon">Coming Soon</span>
                         </div>
-                        <h3 class=\"project-title\">Malware Analysis 2</h3>
-                        <p class=\"project-category\">Threat Analysis</p>
-                        <p class=\"project-description\">
-                            Advanced malware analysis exploring evasion techniques and payload extraction.
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">Sandbox Analysis</span>
-                            <span class=\"tech-badge\">YARA</span>
+                        <h3 class="project-title">Malware Analysis 2</h3>
+                        <p class="project-category">Threat Analysis</p>
+                        <p class="project-description">Advanced malware analysis exploring evasion techniques and payload extraction.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Sandbox Analysis</span>
+                            <span class="tech-badge">YARA</span>
                         </div>
                     </div>
-
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path>
-                                </svg>
-                            </div>
-                            <span class=\"status-badge coming-soon\">Coming Soon</span>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">⚔️</div>
+                            <span class="status-badge coming-soon">Coming Soon</span>
                         </div>
-                        <h3 class=\"project-title\">Offensive vs Defensive Security</h3>
-                        <p class=\"project-category\">Security Assessment</p>
-                        <p class=\"project-description\">
-                            Combining penetration testing with defensive monitoring using Elastic SIEM.
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">Pen Testing</span>
-                            <span class=\"tech-badge\">Red Team</span>
+                        <h3 class="project-title">Offensive vs Defensive Security</h3>
+                        <p class="project-category">Security Assessment</p>
+                        <p class="project-description">Combining penetration testing with defensive monitoring using Elastic SIEM.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Pen Testing</span>
+                            <span class="tech-badge">Red Team</span>
                         </div>
                     </div>
                 </div>
-
-                <div class=\"projects-grid\" id=\"others-projects\" style=\"display: none;\">
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\"></rect>
-                                </svg>
-                            </div>
+                <div class="projects-grid" id="others-projects" style="display: none;">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">📱</div>
                         </div>
-                        <h3 class=\"project-title\">Android Injured App</h3>
-                        <p class=\"project-category\">Mobile Security</p>
-                        <p class=\"project-description\">
-                            Security assessment of a mobile platform with OWASP Top 10 Mobile focus.
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">Android</span>
-                            <span class=\"tech-badge\">OWASP</span>
+                        <h3 class="project-title">Android Injured App</h3>
+                        <p class="project-category">Mobile Security</p>
+                        <p class="project-description">Security assessment of a mobile platform with OWASP Top 10 Mobile focus.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Android</span>
+                            <span class="tech-badge">OWASP</span>
                         </div>
                     </div>
-
-                    <div class=\"project-card\">
-                        <div class=\"project-header\">
-                            <div class=\"project-icon\">
-                                <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
-                                    <rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\"></rect>
-                                </svg>
-                            </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">🌡️</div>
                         </div>
-                        <h3 class=\"project-title\">ESP32 IoT Temperature Monitor</h3>
-                        <p class=\"project-category\">IoT Development</p>
-                        <p class=\"project-description\">
-                            Web server on ESP32 for real-time temperature monitoring with IFTTT alerts.
-                        </p>
-                        <div class=\"tech-stack\">
-                            <span class=\"tech-badge\">ESP32</span>
-                            <span class=\"tech-badge\">IoT</span>
+                        <h3 class="project-title">ESP32 IoT Temperature Monitor</h3>
+                        <p class="project-category">IoT Development</p>
+                        <p class="project-description">Web server on ESP32 for real-time temperature monitoring with IFTTT alerts.</p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">IoT</span>
                         </div>
                     </div>
                 </div>
@@ -677,59 +560,56 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
         </div>
     </section>
 
-    <!-- Skills -->
-    <section id=\"skills\" class=\"skills-clean\">
-        <div class=\"container\">
-            <h2 class=\"section-title\">Core Skills</h2>
-            <div class=\"skills-grid-simple\">
-                <div class=\"skill-card\">
-                    <span class=\"skill-number\">01</span>
-                    <h3 class=\"skill-name\">Log Analysis/Monitoring</h3>
+    <section id="skills" class="skills-clean">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid-simple">
+                <div class="skill-card">
+                    <span class="skill-number">01</span>
+                    <h3 class="skill-name">Log Analysis/Monitoring</h3>
                 </div>
-                <div class=\"skill-card\">
-                    <span class=\"skill-number\">02</span>
-                    <h3 class=\"skill-name\">Network Analysis (.pcap)</h3>
+                <div class="skill-card">
+                    <span class="skill-number">02</span>
+                    <h3 class="skill-name">Network Analysis (.pcap)</h3>
                 </div>
-                <div class=\"skill-card\">
-                    <span class=\"skill-number\">03</span>
-                    <h3 class=\"skill-name\">Incident Response</h3>
+                <div class="skill-card">
+                    <span class="skill-number">03</span>
+                    <h3 class="skill-name">Incident Response</h3>
                 </div>
-                <div class=\"skill-card\">
-                    <span class=\"skill-number\">04</span>
-                    <h3 class=\"skill-name\">Threat Detection</h3>
+                <div class="skill-card">
+                    <span class="skill-number">04</span>
+                    <h3 class="skill-name">Threat Detection</h3>
                 </div>
-                <div class=\"skill-card\">
-                    <span class=\"skill-number\">05</span>
-                    <h3 class=\"skill-name\">Server Configuration</h3>
+                <div class="skill-card">
+                    <span class="skill-number">05</span>
+                    <h3 class="skill-name">Server Configuration</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interests -->
-    <section id=\"interests\" class=\"interests-clean\">
-        <div class=\"container\">
-            <h2 class=\"section-title\">Beyond The Screen</h2>
-            <p class=\"section-subtitle\">When I'm not breaking systems or writing code</p>
-
-            <div class=\"interests-grid\">
-                <div class=\"interest-card\">
+    <section id="interests" class="interests-clean">
+        <div class="container">
+            <h2 class="section-title">Beyond The Screen</h2>
+            <p class="section-subtitle">When I'm not breaking systems or writing code</p>
+            <div class="interests-grid">
+                <div class="interest-card">
                     <h3>CTFs & Hands-on Labs</h3>
                     <p>Grinding HackTheBox and TryHackMe challenges, building vulnerable lab environments.</p>
                 </div>
-                <div class=\"interest-card\">
+                <div class="interest-card">
                     <h3>Strength Training</h3>
                     <p>Building strength and discipline that translates to persistence in problem-solving.</p>
                 </div>
-                <div class=\"interest-card\">
+                <div class="interest-card">
                     <h3>Padel</h3>
                     <p>Fast-paced racquet sport combining strategy and reflexes.</p>
                 </div>
-                <div class=\"interest-card\">
+                <div class="interest-card">
                     <h3>Psychology Books</h3>
                     <p>Understanding the human element behind security through psychology.</p>
                 </div>
-                <div class=\"interest-card\">
+                <div class="interest-card">
                     <h3>Traveling</h3>
                     <p>Exploring new places and cultures brings fresh perspectives.</p>
                 </div>
@@ -737,33 +617,29 @@ Action: file_editor create /app/frontend/public/portfolio.html --file-text "<!DO
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class=\"footer\">
-        <p class=\"footer-text\">Built with <span class=\"heart-icon\">♥</span> by Sohaib Kaiser Latif</p>
-        <p class=\"footer-text\">© 2025 All rights reserved.</p>
+    <footer class="footer">
+        <p class="footer-text">Built with <span class="heart-icon">♥</span> by Sohaib Kaiser Latif</p>
+        <p class="footer-text">© 2025 All rights reserved.</p>
     </footer>
 
     <script>
-        const tabs = document.querySelectorAll('.tab-trigger');
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                
-                const cybersec = document.getElementById('cybersecurity-projects');
-                const others = document.getElementById('others-projects');
-                
-                if (tab.dataset.tab === 'cybersecurity') {
-                    cybersec.style.display = 'grid';
-                    others.style.display = 'none';
-                } else {
-                    cybersec.style.display = 'none';
-                    others.style.display = 'grid';
-                }
-            });
-        });
+        function switchTab(tab) {
+            const cyberProjects = document.getElementById('cyber-projects');
+            const othersProjects = document.getElementById('others-projects');
+            const tabs = document.querySelectorAll('.tab-trigger');
+            
+            tabs.forEach(t => t.classList.remove('active'));
+            
+            if (tab === 'cyber') {
+                tabs[0].classList.add('active');
+                cyberProjects.style.display = 'grid';
+                othersProjects.style.display = 'none';
+            } else {
+                tabs[1].classList.add('active');
+                cyberProjects.style.display = 'none';
+                othersProjects.style.display = 'grid';
+            }
+        }
     </script>
 </body>
 </html>
-"
-Observation: Create successful: /app/frontend/public/portfolio.html
