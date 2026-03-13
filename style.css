@@ -1,3 +1,231 @@
+📄 ENDELIG KODE - index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohaib Kaiser Latif - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="CV-2026.pdf" download class="cv-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+            </a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Profile Card -->
+            <div class="profile-card">
+                <div class="profile-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <p class="profile-text">Profile Photo</p>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <div class="location-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Oslo, Norway
+                </div>
+                
+                <h1>Sohaib Kaiser Latif</h1>
+                <h2>Cybersecurity Master's Student</h2>
+                <p class="hero-description">
+                    Specializing in log analysis, network monitoring, and threat detection. 
+                    I spend my free time sharpening my skills on HackTheBox and TryHackMe, 
+                    building hands-on labs, and competing in CTFs.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View My Work →</a>
+                    <a href="#skills" class="btn-secondary">Skills & Interests</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <!-- Cybersecurity Projects -->
+        <h3 class="project-category-title">Cybersecurity</h3>
+        <div class="projects">
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge big">Big Project</span>
+                </div>
+                <h3>Elastic SIEM Lab Setup</h3>
+                <p class="category">Security Operations</p>
+                <p>Practical setup of Elastic SIEM with log collection, event analysis, and alerting in a simulated SOC environment.</p>
+                <div class="tags">
+                    <span class="tag">Elastic Stack</span>
+                    <span class="tag">SIEM</span>
+                    <span class="tag">Log Analysis</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge big">Big Project</span>
+                </div>
+                <h3>Virtual Multi-Zone Enterprise Network Lab</h3>
+                <p class="category">Infrastructure</p>
+                <p>Built and configured a segmented enterprise network with pfSense (WAN/LAN/DMZ).</p>
+                <div class="tags">
+                    <span class="tag">pfSense</span>
+                    <span class="tag">VLANs</span>
+                    <span class="tag">Firewall</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge small">Small Project</span>
+                </div>
+                <h3>Malware Analysis 1</h3>
+                <p class="category">Threat Analysis</p>
+                <p>In-depth static and dynamic malware analysis focusing on reverse engineering.</p>
+                <div class="tags">
+                    <span class="tag">Malware Analysis</span>
+                    <span class="tag">IDA Pro</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge small">Small Project</span>
+                </div>
+                <h3>Malware Analysis 2</h3>
+                <p class="category">Threat Analysis</p>
+                <p>Advanced malware analysis exploring evasion techniques and payload extraction.</p>
+                <div class="tags">
+                    <span class="tag">Sandbox Analysis</span>
+                    <span class="tag">YARA</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge big">Big Project</span>
+                </div>
+                <h3>Offensive vs Defensive Security</h3>
+                <p class="category">Security Assessment</p>
+                <p>Combining penetration testing with defensive monitoring using Elastic SIEM.</p>
+                <div class="tags">
+                    <span class="tag">Pen Testing</span>
+                    <span class="tag">Red Team</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Projects -->
+        <h3 class="project-category-title">Other Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge small">Small Project</span>
+                </div>
+                <h3>Android Injured App</h3>
+                <p class="category">Mobile Security</p>
+                <p>Security assessment of a mobile platform with OWASP Top 10 Mobile focus.</p>
+                <div class="tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">OWASP</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-badge small">Small Project</span>
+                </div>
+                <h3>ESP32 IoT Temperature Monitor</h3>
+                <p class="category">IoT Development</p>
+                <p>Web server on ESP32 for real-time temperature monitoring with IFTTT alerts.</p>
+                <div class="tags">
+                    <span class="tag">ESP32</span>
+                    <span class="tag">IoT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Core Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>Log Analysis/Monitoring</h3>
+            </div>
+            <div class="skill">
+                <h3>Network Analysis (.pcap)</h3>
+            </div>
+            <div class="skill">
+                <h3>Incident Response</h3>
+            </div>
+            <div class="skill">
+                <h3>Threat Detection</h3>
+            </div>
+            <div class="skill">
+                <h3>Server Configuration</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+        <h2>Interests</h2>
+        <div class="interests">
+            <div class="interest">
+                <h3>CTFs & Hands-on Labs</h3>
+                <p>Grinding HackTheBox and TryHackMe challenges, building vulnerable lab environments.</p>
+            </div>
+            <div class="interest">
+                <h3>Strength Training</h3>
+                <p>Building strength and discipline that translates to persistence in problem-solving.</p>
+            </div>
+            <div class="interest">
+                <h3>Padel</h3>
+                <p>Fast-paced racquet sport combining strategy and reflexes.</p>
+            </div>
+            <div class="interest">
+                <h3>Psychology Books</h3>
+                <p>Understanding the human element behind security through psychology.</p>
+            </div>
+            <div class="interest">
+                <h3>Traveling</h3>
+                <p>Exploring new places and cultures brings fresh perspectives.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+🎨 ENDELIG KODE - style.css
+/* ===========================
+   RESET AND BASE STYLES
+   =========================== */
 * {
     margin: 0;
     padding: 0;
