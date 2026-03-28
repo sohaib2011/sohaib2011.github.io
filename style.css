@@ -16,9 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ===========================
-   NAVIGATION
-   =========================== */
+/* Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -54,7 +52,7 @@ nav a:hover {
     color: #10B981;
 }
 
-/* CV Button - PDF Style */
+/* CV button */
 .cv-btn {
     background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
     color: white;
@@ -97,7 +95,7 @@ nav a:hover {
     width: 100%;
 }
 
-/* Profile Card */
+/* Profile card */
 .profile-card {
     flex-shrink: 0;
     width: 450px;
@@ -213,9 +211,7 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* ===========================
-   SECTIONS
-   =========================== */
+/* Sections */
 section {
     padding: 80px 20px;
     max-width: 1200px;
@@ -230,9 +226,7 @@ h2 {
     font-weight: 700;
 }
 
-/* ===========================
-   PROJECTS
-   =========================== */
+/* Projects */
 .project-category-title {
     font-size: 1.8rem;
     color: #10B981;
@@ -329,9 +323,7 @@ h2 {
     font-weight: 500;
 }
 
-/* ===========================
-   SKILLS SECTION
-   =========================== */
+/* Skills */
 .skills-list {
     max-width: 700px;
     margin: 0 auto;
@@ -358,9 +350,7 @@ h2 {
     font-weight: 500;
 }
 
-/* ===========================
-   INTERESTS SECTION
-   =========================== */
+/* Interests */
 .interests {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
