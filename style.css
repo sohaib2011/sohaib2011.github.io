@@ -76,9 +76,7 @@ nav a:hover {
     height: 16px;
 }
 
-/* ===========================
-   HERO SECTION
-   =========================== */
+/* Hero Section*/
 .hero {
     min-height: 100vh;
     display: flex;
