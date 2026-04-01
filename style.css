@@ -312,27 +312,7 @@ h2 {
     font-weight: 500;
 }
 
-/* Project GitHub link */
-.project-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    color: #10B981;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    margin-top: auto;
-    transition: all 0.2s ease;
-    border-bottom: 1px solid rgba(16, 185, 129, 0.3);
-    padding-bottom: 2px;
-    width: fit-content;
-}
 
-.project-link:hover {
-    color: #34d399;
-    border-bottom-color: #34d399;
-    gap: 0.6rem;
-}
 
 /* Skills */
 .skills-list {
