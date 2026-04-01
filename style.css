@@ -100,7 +100,7 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* viktig */
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 
@@ -112,7 +112,7 @@ nav a:hover {
 .profile-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* fyller kortet fint */
+    object-fit: cover;
 }
 
 /* Hero Content */
@@ -231,6 +231,8 @@ h2 {
     border-radius: 10px;
     transition: all 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .project:hover {
@@ -295,6 +297,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
+    margin-bottom: 1.2rem;
 }
 
 .tag {
@@ -304,6 +307,28 @@ h2 {
     border-radius: 5px;
     font-size: 0.85rem;
     font-weight: 500;
+}
+
+/* Project GitHub link */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #10B981;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: auto;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.3);
+    padding-bottom: 2px;
+    width: fit-content;
+}
+
+.project-link:hover {
+    color: #34d399;
+    border-bottom-color: #34d399;
+    gap: 0.6rem;
 }
 
 /* Skills */
